@@ -1,9 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .modules import test
+from .modules import test, batch
 
 def index(request):
     print(test.test_ryu())
+    # batch.task()
     params = {
         "message": "this is me"
     }

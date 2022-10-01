@@ -28,3 +28,6 @@ django-admin startproject config .
 
 // アプリを作成する
 python manage.py startapp appname
+
+// サーバーを起動する
+python manage.py runserver
