@@ -43,9 +43,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # add by ryu app's apps.py's name
-    'ns_app'
+    'ns_app',
+    'django_crontab',
+    'django_cron',
 ]
-
+# https://pypi.org/project/django-crontab/
+CRONJOBS = [
+    ('*/1 * * * *', 'ns_app.cron.my_cron_job')
+]
+# https://www.section.io/engineering-education/automating-jobs-schedule-with-django-cron-in-python/#overview-of-job-scheduling
+# CRON_CLASSES = [
+#     "ns_app.cron.MyCronJob",
+# ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

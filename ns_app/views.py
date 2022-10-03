@@ -4,7 +4,7 @@ from .modules import test, batch
 
 def index(request):
     print(test.test_ryu())
-    # batch.task()
+    batch.task()
     params = {
         "message": "this is me"
     }
