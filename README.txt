@@ -1,8 +1,10 @@
 // 仮想環境作る
 python -m venv env
 
-//仮想環境に入る
+//仮想環境に入る(win)
 env\Scripts\Activate.ps1
+//仮想環境に入る(mac)
+source env/bin/activate
 
 // 仮想環境quite
 deactivate
