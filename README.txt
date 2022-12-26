@@ -7,7 +7,7 @@ env\Scripts\Activate.ps1
 source env/bin/activate
 
 // djangoをインストールする
-import django
+python -m pip install Django
 
 // 仮想環境quite
 deactivate
