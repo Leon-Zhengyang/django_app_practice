@@ -6,6 +6,9 @@ env\Scripts\Activate.ps1
 //仮想環境に入る(mac)
 source env/bin/activate
 
+// djangoをインストールする
+import django
+
 // 仮想環境quite
 deactivate
 
