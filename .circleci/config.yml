@@ -12,7 +12,7 @@ jobs:
     executor: python/default
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-steps:
+    steps:
       - checkout
       - restore_cache:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
