@@ -14,9 +14,9 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      # - python/load-cache
-      # - python/install-deps
-      # - python/save-cache
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
       - run:
           name: "run tests"
           command: python manage.py test
@@ -24,6 +24,6 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  build_and_test-workflow:
+  main:
     jobs:
       - build_and_test
