@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # add by ryu app's apps.py's name
     'ns_app',
-    'django_crontab',
-    'django_cron',
+    # 'django_crontab',
+    # 'django_cron',
 ]
 # https://pypi.org/project/django-crontab/
 CRONJOBS = [
