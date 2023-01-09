@@ -14,9 +14,9 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
+      # - python/load-cache
+      # - python/install-deps
+      # - python/save-cache
       - run:
           name: "run tests"
           command: ./manage.py test
