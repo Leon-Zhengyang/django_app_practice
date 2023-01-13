@@ -1,41 +1,40 @@
 # django app for learing and practice
 
 ## set up
-// 仮想環境作る
-python -m venv env
+#### 仮想環境作る
+`python -m venv env`
 
-//仮想環境に入る(win)
-env\Scripts\Activate.ps1
-//仮想環境に入る(mac)
-source env/bin/activate
+#### 仮想環境に入る(win)
+`env\Scripts\Activate.ps1`
+#### 仮想環境に入る(mac)
+`source env/bin/activate`
 
-// djangoをインストールする
-python -m pip install Django
+#### djangoをインストールする
+`python -m pip install Django`
 
-// 仮想環境quit
-deactivate
+#### 仮想環境quit
+`deactivate`
 
-// requirementsを作成する
-pip freeze > requirements.txt
+#### requirementsを作成する
+`pip freeze > requirements.txt`
 
-// libaryのインストール
-pip install -r requirements.txt
+#### libaryのインストール
+`pip install -r requirements.txt`
+#### 現在の環境にインストールされたパッケージ確認
+`pip freeze`
+`pip list`
 
-//現在の環境にインストールされたパッケージ確認
-pip freeze
-pip list
+#### パッケージ削除
+`pip uninstall Django`
 
-//パッケージ削除
-pip uninstall Django
+#### requirements.txt中のライブラリを一括インストール
+`pip install -r requirements.txt`
 
-//requirements.txt中のライブラリを一括インストール
-pip install -r requirements.txt
+#### プロジェクト作成する
+`django-admin startproject config .`
 
-// プロジェクト作成する
-django-admin startproject config .
+#### アプリを作成する
+`python manage.py startapp appname`
 
-// アプリを作成する
-python manage.py startapp appname
-
-// サーバーを起動する
-python manage.py runserver
+#### サーバーを起動する
+`python manage.py runserver`
