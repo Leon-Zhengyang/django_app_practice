@@ -1,3 +1,6 @@
+# django app for learing and practice
+
+## set up
 // 仮想環境作る
 python -m venv env
 
@@ -9,7 +12,7 @@ source env/bin/activate
 // djangoをインストールする
 python -m pip install Django
 
-// 仮想環境quite
+// 仮想環境quit
 deactivate
 
 // requirementsを作成する
