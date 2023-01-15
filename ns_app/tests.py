@@ -16,3 +16,10 @@ class QuestionModelTests(TestCase):
         question = Question.objects.all()
         self.assertEqual(question.count(), 0)
 
+    def test1(self):
+        """
+        was_published_recently() returns False for questions whose pub_date
+        is in the future.
+        """
+        question = Question.objects.all()
+        self.assertEqual(question.count(), 1)
